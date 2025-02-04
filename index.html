@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">   
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">  
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        .plan_button1{
+            color:azure;
+            padding: 5px 5px;
+            border-width: 0;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            filter: drop-shadow(0.05rem 0.05rem 0.2rem black);
+            font-family: "Geologica", serif;
+            font-size: medium;
+            background-image: linear-gradient(to right,transparent, orange , hotpink);
+        }
+        .plan_button2{
+            color: azure;
+            padding:5px 5px;
+            border-width: 0;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            filter: drop-shadow(0.05rem 0.05rem 0.2rem black);
+            font-family: "Geologica", serif;
+            font-size: medium;
+            background-image: linear-gradient(to right,transparent, skyblue ,navy);
+        }
+        .plan_button3{
+            color: azure;
+            padding: 5px 5px;
+            border-width: 0;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            filter: drop-shadow(0.05rem 0.05rem 0.2rem black);
+            font-family: "Geologica", serif;
+            font-size: medium;
+            background-image: linear-gradient(to right,transparent, rgb(87, 181, 77) ,seagreen);
+        }
+        .box1{
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            padding-inline-start: 15px;
+            background-image: linear-gradient(to right,transparent, orange , hotpink);
+        }
+        .box2{
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            padding-inline-start: 15px;
+            background-image: linear-gradient(to right,transparent, skyblue ,navy);
+        }
+        .box3{
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            padding-inline-start: 15px;
+            background-image: linear-gradient(to right, transparent, rgb(87, 181, 77) ,seagreen);
+        }
+        .container{
+            position:absolute;
+                left: 300px;
+                top: 100px;
+            filter: drop-shadow(0.05rem 0.05rem 0.9rem black);
+            display:flex;
+            flex-direction: row;
+            width: 100vh;
+            gap:20px;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            flex: 1;
+            max-width: 400px;
+            padding-bottom: 15px;
+            background-color: white;
+            border-radius: 25px;
+            text-align: center;
+            
+        }
+        .plan_title{
+            font-size: xx-large;
+            font-weight: 300px;
+            margin-bottom: 10px;
+            padding-top: 15px;
+            text-decoration: underline;
+            text-decoration-thickness: 0.75px;
+            text-underline-offset: 10px ;
+            font-family: "Geologica", serif;
+            color: aliceblue;
+        }
+        .plan_price{
+            font-family: "Libre Baskerville", serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 2.5rem;
+            padding-top: 15px;
+            text-decoration:underline;
+            text-underline-offset: 20px;
+            text-decoration-thickness: 0.05px;
+        }
+        .plan_content{
+            font-family: "Courier Prime", serif;
+            font-weight: 400px;
+            font-size: smaller;
+            font-style: normal;  
+        }
+        
+        .plan_items{
+            font-family: "Courier Prime", serif;
+            font-weight: 400px;
+            font-size: smaller;
+            font-style: normal;       
+            list-style: none; 
+            text-align: left;
+            display: inline;
+        }
+        li{
+            margin: 10px 10px 10px 20px;
+        }
+        .plan_content{
+            color: aliceblue;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="box1"><div class="plan_title">BASIC</div>
+            <div class="plan_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div><br></div>
+                <div class="plan_price"><sup>$</sup>20<sub>/mo</sub></div>
+                    <ul class="plan_items">
+                        <li><span>&#10003</span> tincidunt lectus sed sem pharetra, facilisis rutrum leo accumsan.
+                        <li><span>&#10007</span> Pellentesque et orci sed libero tincidunt feugiat.</li>    
+                        <li><span>&#10007</span> Fusce feugiat odio sit amet nisl pulvinar dapibus.</li>    
+                        <li><span>&#10007</span> Nulla ac augue sit amet enim euismod sollicitudin at quis nisl.</li>
+                    </ul>
+                    <button class="plan_button1">BUY NOW</button><a></a>
+        </div>
+        <div class="box">
+            <div class="box2"><div class="plan_title">STANDARD</div>
+            <div class="plan_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div></br></div>
+                <div class="plan_price"><sup>$</sup>35<sub>/mo</sub></div>
+                    <ul class="plan_items">
+                        <li><span>&#10003</span> tincidunt lectus sed sem pharetra, facilisis rutrum leo accumsan.
+                        <li><span>&#10003</span> Pellentesque et orci sed libero tincidunt feugiat.</li>    
+                        <li><span>&#10007</span> Fusce feugiat odio sit amet nisl pulvinar dapibus.</li>    
+                        <li><span>&#10007</span> Nulla ac augue sit amet enim euismod sollicitudin at quis nisl.</li>
+                    </ul>
+                    <button class="plan_button2">BUY NOW</button><a></a>
+        </div>
+        <div class="box">
+            <div class="box3"><div class="plan_title">PREMIUM</div>
+            <div class="plan_content">Lorem ipsum dolor sit amet, consectetur adipiscing eli.</div></br></div>
+                <div class="plan_price"><sup>$</sup>50<sub>/mo</sub></div>
+                    <ul class="plan_items">
+                        <li><span>&#10003</span> tincidunt lectus sed sem pharetra, facilisis rutrum leo accumsan.
+                        <li><span>&#10003</span> Pellentesque et orci sed libero tincidunt feugiat.</li>    
+                        <li><span>&#10003</span> Fusce feugiat odio sit amet nisl pulvinar dapibus.</li>    
+                        <li><span>&#10003</span> Nulla ac augue sit amet enim euismod sollicitudin at quis nisl.</li>
+                    </ul>
+                    <button class="plan_button3">BUY NOW</button><a></a>
+        </div>
+      </div>
+    
+</body>
+</html>
